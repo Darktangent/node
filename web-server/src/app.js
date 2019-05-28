@@ -4,6 +4,7 @@ const geocode=require('./utils/geocode')
 const express=require('express')
 const hbs=require('hbs')
 const app=express()
+const port=process.env.PORT || 3000
 
 // define path for express config
 
@@ -89,7 +90,7 @@ app.get("*",(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log('client connected');
   
 })
